@@ -1,7 +1,7 @@
 # Holistic
 > holistic ‧ /həʊˈlɪstɪk,hɒˈlɪstɪk/ <br> characterized by the treatment of the whole person, taking into account mental and social factors, rather than just the symptoms of a disease.
 
-An accessibility checker tool developed with node and react during Balkan Hackathon 2018.<br>
+A web accessibility checker tool developed with node and react during Balkan Hackathon 2018.<br>
 ## 📝Description
 This tool uses <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> to scrape the web, extract elements of interest (in this context form elements), and evaluate them for the attributes they (don't) have.
 In the back end there is a calculation of number of occurences the missing attributes don't appear.
