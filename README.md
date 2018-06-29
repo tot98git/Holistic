@@ -1,4 +1,6 @@
 # Holistic
+> holistic ‧ /həʊˈlɪstɪk,hɒˈlɪstɪk/ <br> characterized by the treatment of the whole person, taking into account mental and social factors, rather than just the symptoms of a disease.
+
 An accessibility checker tool developed with node and react during Balkan Hackathon 2018.<br>
 ## 📝Description
 This tool uses <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> to scrape the web, extract elements of interest (in this context form elements), and evaluate them for the attributes they (don't) have.
@@ -10,3 +12,4 @@ This project uses Node & Express for back-end functions and React for front end,
 
 ## 💻Usage
 The project is not deployed anywhere yet, so in order to use it, users are welcomed to clone this project in their local systems and run it from there. As such, users are welcomed to customize the scraping based on their needs and ideas.
+* Due to Github uploading size limit (100 MB), the Puppeteer module hasn't been pushed in this github. After cloning this project, you can install the respective module with ```npm install puppeteer```
