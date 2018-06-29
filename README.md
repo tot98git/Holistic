@@ -8,8 +8,8 @@ In the back end there is a calculation of number of occurences the missing attri
 There is also a script generated to "fix" the webpage and add accessibility functions to the given webpage. The script's primary function is to traverse to the previous sibling of the form element to get the inner textual content and then add it to the initial element, under the attribute, aria-label.
 
 ## ⌨️Technologies
-This project uses Node & Express for back-end functions and React for front end, 
+This project uses Node & Express for back-end functions and React for front end.
 
 ## 💻Usage
 The project is not deployed anywhere yet, so in order to use it, users are welcomed to clone this project in their local systems and run it from there. As such, users are welcomed to customize the scraping based on their needs and ideas.
-* Due to Github uploading size limit (100 MB), the Puppeteer module hasn't been pushed in this github. After cloning this project, you can install the respective module with ```npm install puppeteer```
+* Due to Github uploading size limit (100 MB), the Puppeteer module hasn't been pushed in this repository. After cloning this project, you can install the respective module with ```npm install puppeteer```.
