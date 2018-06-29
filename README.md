@@ -13,3 +13,4 @@ This project uses Node & Express for back-end functions and React for front end.
 ## 💻Usage
 The project is not deployed anywhere yet, so in order to use it, users are welcomed to clone this project in their local systems and run it from there. As such, users are welcomed to customize the scraping based on their needs and ideas.
 * Due to Github uploading size limit (100 MB), the Puppeteer module hasn't been pushed in this repository. After cloning this project, you can install the respective module with ```npm install puppeteer```.
+However, you could also install it as a npm module by ```npm i holistic-accessibility```, although the functionality is currently limited.
