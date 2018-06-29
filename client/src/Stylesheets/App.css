@@ -1,0 +1,371 @@
+html,body{
+  height:100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+}
+#root{
+  width:100%;
+  height:100%;
+  position: absolute;
+  z-index: 1;
+}
+body:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  top:0;
+  z-index: 0;
+  height:100%;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#root:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height:60%;
+  display: block;
+  background-size:100% 100%;
+  z-index: -1;
+  opacity: bod;
+  bottom:0;
+}
+
+.main-wrapper{
+  width:100%;
+}
+.main-wrapper > * {
+  width:100%;
+}
+.wrapper-body{
+  width:100%;
+  margin-top:20px;
+}
+.head-content {
+  width:70%;
+  margin:auto;
+  padding:3%;
+  border-radius:5px;
+  padding-top:0px;
+  font-family: "Avenir",serif;
+  overflow:auto;
+  margin-bottom:20px;
+  overflow: hidden;
+  
+  position: relative;
+}
+
+
+.underlined::after{
+  position: absolute;
+  content: "";
+  display: block;
+  width:30%;
+  height:3px;
+  background:black;
+}
+.icon {
+  width:50px;
+  height:50px;
+  background:url("../icons.jpg") 114px 147px;
+}
+
+
+.head-content > h3 {
+  font-weight: normal;
+  color:white;
+  text-align: center;
+  font-family: "Euphemia UCAS",sans-serif;
+  font-size:250%;
+  width:70%;
+  margin:auto;
+  padding-bottom:10px;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+.content-desc {
+  color:white;
+  width:50%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin:auto;
+}
+.desc-tile {
+  background-image: linear-gradient(to right top, #400032, #480033, #4f0035, #570035, #5e0036);
+  padding:2%;
+  border-radius: 5px;
+  width:50%;
+  margin:20px;
+  justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+}
+.desc-tile > h3 {
+  bottom:0;
+  position: relative;
+}
+.desc-tile > img {
+  width:100%;
+}
+.head-logo{
+  width:20%;
+  margin-left:5%;
+}
+.head-logo > img {
+  width:100%;
+}
+.wrapper-head{
+  overflow: hidden;
+  transition:1s;
+  box-shadow:0px 2px 1px black;
+  background: url("https://www.transparenttextures.com/patterns/billie-holiday.png"),-webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#world{
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 1 ;
+}
+.body-form{
+  width:50%;
+  margin:auto;
+  height:10%;
+  overflow: auto;
+  margin-bottom:20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.body-form > *{
+  transition:1s;
+  box-sizing: border-box;
+}
+.input-wrapper > input {
+  width:100%;
+  padding:2%;
+  font-size:2vw;
+  border-radius: 3px 0px 0px 3px;
+  border:none;
+  background-color:white;
+}
+.input-wrapper {
+  width:80%;
+  height:100%;
+  position: relative;
+  float:left;
+}
+.input-wrapper:after{
+  content:"";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height:3px;
+  background:black;
+  bottom:0px;
+  background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.body-form > button {
+  width:20%;
+  padding:1%;
+  font-size:1.2vw;
+  z-index: 2;
+  position: relative;
+  float:right;
+  color:rgb(240,244,228);
+  background: -webkit-linear-gradient(to right, #ad5389, #3c1053); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ad5389, #3c1053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius:0px 5px 5px 0px;
+}
+.body-form > button:active{
+ background:purple;
+}
+.options {
+  width:100%;
+  height:0;
+  clear:both;
+  display: flex;
+  flex-wrap: nowrap;
+  color:white;
+  transition:0.5s;
+  overflow: hidden;
+}
+.test-everything{
+  display: flex;
+  background: linear-gradient(to right, #ad5389, #3c1053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  flex-wrap: nowrap;
+}
+.test-everything-icon{
+  height:100%;
+  padding:10px;
+  border-right:2px solid black;
+}
+.test-everything-icon > span {
+  text-align: center;
+  font-size:150%;
+}
+.test-everything-options {
+  display: flex;
+  overflow: hidden;
+  flex-wrap:nowrap;
+  vertical-align: middle;
+  transition:2s;
+}
+.option{
+  position: relative;
+  font-size:110%;
+  padding:3%;
+}
+#settings{
+  color:rgba(1,1,1,0.2);
+  position: absolute;
+  top:30%;
+  font-size:140%;
+  right:2%;
+}
+.test-results {
+  width:100%;
+  overflow: hidden;
+  height: 0px;
+}
+.results-tile {
+  overflow: auto;
+  width:100%;
+  position: relative;
+  color:white;
+  padding:20px;
+  box-sizing: border-box;
+  animation: tileEntr 2s ease;
+}
+@keyframes tileEntr{
+  0%{
+    opacity: 0;
+    transform:translateY(-20%);
+  }
+  100%{
+    opacity: 1;
+    transform:translateY(0%);
+  }
+}
+.results-tile:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.negative{
+  background-image: radial-gradient(circle, #510030, #4d0635, #490c3a, #44123e, #3e1642);
+}
+.tile-explanation{
+  overflow: hidden;
+  height: auto;
+  transition: 0.5s;
+  width:100%;
+}
+.positive {
+}
+.positive:before{
+  display: block;
+  content:"";
+  position: absolute;
+  top:0;
+  opacity: 0.5;
+  left:0;
+  z-index: -1;
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(to top, #7a4d7e, #713c6a, #672a57, #5d1743, #510030);
+  opacity: 5;
+}
+.tile-problem > h5 {
+  margin:0;
+}
+.tile-problem {
+  width:70%;
+  float:left;
+  font-size:1.5vw;
+  font-family: "Euphemia UCAS",sans-serif;
+}
+.tile-occur{
+  width:30%;
+  text-align: right;
+  float:right;
+  font-size:1.5vw;
+  font-family: "Euphemia UCAS",sans-serif;
+  margin:0;
+}
+.info{
+  width:50%;
+}
+
+.tile-occur > h5 {
+  margin:0;
+}
+.wrapper-foot {
+  width:100%;
+  text-align: center;
+  transition: 2s;
+}
+.stats{
+  width:70%;
+  overflow: auto;
+  margin:auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.stats-tile {
+  width:30%;
+  position: relative;
+  z-index: 1;
+}
+.stats-tile > h3{
+  color:white;
+}
+.stats-tile:after{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:70%;
+  display: block;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom:2px solid rgb(120, 165, 6);
+  content: "";
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+,*/
+  z-index: -1;
+}
+
+
+.stats-tile > canvas {
+  width:50%; 
+}
+.tile-content {
+  text-align: right;
+  width:49%;
+  float:right;
+}
+.technologies-used{
+  display: flex;
+  width:25%;
+  margin:auto;
+  flex-wrap: nowrap;
+}
+.technologies-tile {
+  width:30%;
+}
+.technologies-tile > img {
+  width:100%;
+}
+#fixme {
+  width:100%;
+  background: -webkit-linear-gradient(to right, #ad5389, #3c1053); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ad5389, #3c1053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding:20px;
+  font-size:140%;
+  color:white;
+}
